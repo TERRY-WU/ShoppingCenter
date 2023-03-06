@@ -45,7 +45,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
         reporter.config().setReportName("Automation Test Results");
         extentReports.attachReporter(reporter);
         extentReports.setSystemInfo("System", "MAC");
-        extentReports.setSystemInfo("Author", "Naveen AutomationLabs");
+        extentReports.setSystemInfo("Author", "AutomationLabs");
         extentReports.setSystemInfo("Build#", "1.1");
 
         return extentReports;

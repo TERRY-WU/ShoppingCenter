@@ -94,8 +94,6 @@ public class DriverFactory {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
-            System.out.println("Screenshots folder exists...!");
         }
         SimpleDateFormat sdFormatter = new SimpleDateFormat("yyyy-MM-dd_HH:mm:ss");
         String dateStr = sdFormatter.format(new Date());
