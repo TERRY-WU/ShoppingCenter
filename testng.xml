@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Open Cart Test Suite" verbose="4" thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="com.qa.shopping.opencart.listeners.AnnotationTransformer"/>
+        <listener class-name="com.qa.shopping.opencart.listeners.ExtentReportListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Login Page Test">
+        <classes>
+            <class name="com.qa.shopping.opencart.tests.LoginPageTest">
+                <methods>
+<!--                    <include name="loginPageTitleTest"/>-->
+<!--                    <include name="loginPageUrlTest"/>-->
+<!--                    <include name="forgotPwdLinkTest"/>-->
+<!--                    <include name="registerLinkTest"/>-->
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Accounts Page Test">
+        <classes>
+            <class name="com.qa.shopping.opencart.tests.AccountPageTest">
+                <methods>
+<!--                    <include name="accPageTitleTest"/>-->
+<!--                    <include name="accPageHeaderTest"/>-->
+<!--                    <include name="isLogoutExistTest"/>-->
+<!--                    <include name="accPageSectionsTest"/>-->
+<!--                    <include name="searchTest"/>-->
+<!--                    <include name="selectProductTest"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Product Info Page Test">
+        <classes>
+<!--            <class name="com.qa.shopping.opencart.tests.ProductInfoPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="productHeaderTest"/>-->
+<!--                    <include name="productImagesCountTest"/>-->
+<!--                    <include name="productInfoTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
