@@ -26,10 +26,12 @@ out/
 *.tar
 *.zip
 *.pkg
-
-## Java
-*.war
 *.jar
+*.war
+*.nar
+*.ear
+*.tar.gz
+*.rar
 
 # Databases
 *.sql
