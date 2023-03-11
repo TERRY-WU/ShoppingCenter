@@ -2,9 +2,10 @@ package com.qa.shopping.opencart.pages;
 
 public class Order {
 
-    String name = "Order Page...";
+
 
     public void show() {
+        String name = "Order Page...";
         System.out.println(name);
     }
 
