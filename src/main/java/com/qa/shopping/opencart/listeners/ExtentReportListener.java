@@ -21,7 +21,8 @@ import com.qa.shopping.opencart.factory.DriverFactory;
 public class ExtentReportListener extends DriverFactory implements ITestListener {
 
     private static final String OUTPUT_FOLDER = "./report/";
-    private static final String FILE_NAME = "TestExecutionReport_" + getCurrentDateAndTime() + ".html";
+//    private static final String FILE_NAME = "TestExecutionReport_" + getCurrentDateAndTime() + ".html";
+    private static final String FILE_NAME = "TestExecutionReport.html";
     private static ExtentReports extent = init();
     public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     private static ExtentReports extentReports;
@@ -96,7 +97,7 @@ public class ExtentReportListener extends DriverFactory implements ITestListener
         test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(getScreenshot(className, methodName)).build());
         test.get().getModel().setEndTime(getTime(result.getEndMillis()));
         /**
-         * 也可以这样来添加:
+         * you can also use below code to add/也可以这样来添加:
          *         ExtentTest test = (ExtentTest)result.getAttribute("test");
          *         test.addScreenCaptureFromPath(getScreenshot());
          */
