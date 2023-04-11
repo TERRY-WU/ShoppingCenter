@@ -21,6 +21,7 @@ public class OptionsManager {
 
     public ChromeOptions getChromeOptions() {
         chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--remote-allow-origins=*");
         if (Boolean.parseBoolean(appConfig.getString("headless"))) {
             chromeOptions.addArguments("--headless");
         }
