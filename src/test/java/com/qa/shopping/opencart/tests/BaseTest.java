@@ -12,7 +12,7 @@ import org.testng.asserts.SoftAssert;
 public class BaseTest {
 
     DriverFactory factory;
-    public LoginPage loginPage;
+    LoginPage loginPage;
     AccountPage accountPage;
     SearchResultsPage searchResultPage;
     ProductInfoPage productInfoPage;

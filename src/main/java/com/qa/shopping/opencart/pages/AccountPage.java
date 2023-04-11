@@ -11,7 +11,7 @@ import java.util.List;
 
 public class AccountPage {
 
-    WebDriver driver;
+    private WebDriver driver;
     private ElementUtil eleUtil;
     private By header = By.cssSelector("div#logo a");
     private By accountSections = By.cssSelector("div#content h2");

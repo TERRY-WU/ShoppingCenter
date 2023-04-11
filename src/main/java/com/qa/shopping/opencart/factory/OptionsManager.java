@@ -3,7 +3,6 @@ package com.qa.shopping.opencart.factory;
 import com.typesafe.config.Config;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.safari.SafariOptions;
 
 public class OptionsManager {
 
